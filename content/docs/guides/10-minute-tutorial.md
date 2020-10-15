@@ -375,7 +375,7 @@ Prepare the file structure:
 
 ```shell
 mkdir features
-mkdir features/step_definitions
+mkdir features/d_definitions
 ```
 
 Create a file called `cucumber.js` at the root of your project and add the following
@@ -548,7 +548,7 @@ It's a good idea to use a name similar to the file name.
 The second line is a brief description of the feature. Cucumber does not
 execute this line because it's documentation.
 
-The fourth line, `Scenario: Sunday is not Friday` is a
+The fourth line, `Scenario: Sunday isn't Friday` is a
 [scenario](/docs/gherkin/reference#example), which is a *concrete example* illustrating how
 the software should behave.
 
@@ -1534,7 +1534,7 @@ import junit.framework.Assert.assertEquals
 fun isItFriday(today: String) = if (today == "Friday") "TGIF" else "Nope"
 
 
-class StepDefs {
+class StepDefinitions {
     private lateinit var today: String
     private lateinit var actualAnswer: String
 
